@@ -13,7 +13,7 @@ if (!BASE_URL || !UNIFI_SITE_ID || !UDM_API_KEY) {
 }
 
 // Create axios instance with proper HTTPS agent for self-signed certificates
-export const unifiClient = axios.create({
+export const unifiLocalClient = axios.create({
     baseURL: BASE_URL,
     timeout: 10000,
     headers: {

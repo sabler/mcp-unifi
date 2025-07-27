@@ -1,4 +1,5 @@
-import { unifiClient, UNIFI_SITE_ID } from "../common/headers";
+import { type TextContent } from "@modelcontextprotocol/sdk/types";
+import { unifiLocalClient, UNIFI_SITE_ID } from "../common/headers";
 import { z } from 'zod'
 
 
@@ -9,14 +10,14 @@ export const getClientDetailsSchema = {
 }
 
 
-export const getClientDetailsHandler = async ({ clientid }: { clientid: string }) => {
+export const getClientDetailsHandler = async ({ clientid }: { clientid: string }):Promise<{content: TextContent[]}> => {
     try {
-        const response = await unifiClient.get(`sites/${UNIFI_SITE_ID}/clients/${clientid}`)
+        const response = await unifiLocalClient.get(`${UNIFI_SITE_ID}/clients/${clientid}`)
 
         return {
             content: [
                 {
-                    type: "text" as const,
+                    type: "text",
                     text: JSON.stringify(response.data, null, 2)
                 }
             ]

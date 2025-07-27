@@ -19,6 +19,7 @@
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.17.0",
     "axios": "^1.11.0",
+    "date-fns": "^4.1.0",
     "dotenv": "^17.2.1",
     "tsx": "^4.20.3",
     "zod": "^3.25.76"

@@ -1,5 +1,5 @@
 
-import { unifiClient, UNIFI_SITE_ID } from '../common/headers';
+import { unifiLocalClient, UNIFI_SITE_ID } from '../common/headers';
 
 export const getClientsSchema = {
     title:"Get Connected Clients",
@@ -8,7 +8,7 @@ export const getClientsSchema = {
 
 export const getClientsHandler = async () => {
     try {
-        const response = await unifiClient.get(`sites/${UNIFI_SITE_ID}/clients`)
+        const response = await unifiLocalClient.get(`${UNIFI_SITE_ID}/clients`)
         
         return { 
             content: [
