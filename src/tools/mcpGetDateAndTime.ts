@@ -1,29 +1,26 @@
 import { type TextContent } from "@modelcontextprotocol/sdk/types";
 
 export const getDateAndTimeSchema = {
-    title: "Get current date and time",
-    description: "Get the current data and time in RFC3339 format"
-}
+  title: "Get current date and time",
+  description: "Get the current data and time in RFC3339 format",
+};
 
+export const getDateAndTimeHandler = async (): Promise<{content: TextContent[]}> => {
+  let currentDT = Date.now();
+  let date = new Date(currentDT);
+  let dateAsISO = date.toISOString();
 
-export const getDateAndTimeHandler = async ():Promise<{content: TextContent[]}> => {
-    let currentDT = Date.now();
-    let date = new Date(currentDT)
-    let dateAsISO = date.toISOString();
+  return {
+    content: [
+      {
+        type: "text",
+        text: date.toString(),
+      },
 
-    return {
-        content:[
-            {
-            type:"text",
-            text: date.toString()
-            },
-
-            {
-            type:"text",
-            text: dateAsISO
-            }
-        ]
-    }
-
-
-}
+      {
+        type: "text",
+        text: dateAsISO,
+      },
+    ],
+  };
+};
