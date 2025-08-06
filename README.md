@@ -1,7 +1,7 @@
 # UniFi MCP Server
 
 > [!IMPORTANT]
-> This software is a personal project that I'm [releasing via the MIT License](https://github.com/sabler/mcp-unifi/blob/main/LICENSE). Furthermore, this project has no affiliation with Ubiquiti, Inc. UniFi, Unifi Dream Machine, and UniFi Site Manager are registered trademarks of Ubiquiti Inc.
+> This software is a personal project that I'm [releasing via the MIT License](https://github.com/sabler/mcp-unifi/blob/main/LICENSE). Furthermore, this project has no affiliation with Ubiquiti, Inc. UniFi, UniFi Dream Machine, and UniFi Site Manager are registered trademarks of Ubiquiti Inc.
 
 > [!WARNING]
 > This MCP server should be considered early beta. I don't plan on introducing any breaking changes, but please keep in mind that it may nonetheless twitch a little between updates. Tools will be added as the UniFi SM and Network APIs mature, but more realistically as often as time permits on my side.
