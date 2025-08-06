@@ -1,4 +1,4 @@
-# mcp-unifi
+# UniFi MCP Server
 
 > [!IMPORTANT]
 > This software is a personal project that I'm [releasing via the MIT License](https://github.com/sabler/mcp-unifi/blob/main/LICENSE). Furthermore, this project has no affiliation with Ubiquiti Networks. UniFi, Unifi Dream Machine, and UniFi Site Manager are registered trademarks of Ubiquiti Inc.
