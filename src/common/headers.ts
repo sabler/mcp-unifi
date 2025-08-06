@@ -14,7 +14,7 @@ if (!BASE_URL || !UNIFI_SITE_ID || !UDM_API_KEY) {
     throw new Error('Missing required environment variables');
 }
 
-// Create axios instance with proper HTTPS agent for self-signed certificates
+
 export const unifiLocalClient = axios.create({
     baseURL: BASE_URL,
     timeout: 10000,

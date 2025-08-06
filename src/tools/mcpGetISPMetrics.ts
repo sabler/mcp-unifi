@@ -17,7 +17,7 @@ const inputValidation = z.discriminatedUnion("timeFrame", [
 ]);
 
 export const getISPMetricsSchema = {
-  title: "[EXPERIMENTAL] Get ISP Metrics",
+  title: "Get ISP Metrics",
   description:
     "Get ISP connection health telemetry from the UniFi Dream Machine. Valid combinations: 5m intervals with 24h duration, or 1h intervals with 7d/30d duration",
   inputSchema: {
