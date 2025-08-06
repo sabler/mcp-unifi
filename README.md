@@ -23,7 +23,7 @@ Schema for each tool are documented in their respective files and test coverage 
 > A Dockerfile is provided and has been tested in [Podman](http://podman.io). This is the recommended approach to running the server.
 
 ## API Keys
-Instructions for obtaining API keys are in the **sample.env** file. It's beyond the scope of this project to dictate how you manage these secrets. The JSON blob provided below is obviously the fastest way to get started, but you're encouraged to handle these keys in ways that are in accordance with your policies, or, more bluntly, in a way that doesn't keep you up at night.
+Instructions for obtaining API keys are in the **sample.env** file. It's beyond the scope of this project to dictate how you manage these secrets. The JSON blob provided below is obviously the fastest way to get started, but you're encouraged to handle these keys in a way that is in accordance with your policies, or, more bluntly, in a way that doesn't keep you up at night.
 
 ## JSON configuration for your MCP client
 
