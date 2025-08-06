@@ -8,7 +8,9 @@
 
 
 ## About This Project
-This MCP server is designed to allow MCP-capable clients (e.g., Claude Desktop) to directly interact with UniFi Site Manager and UniFi Dream Machine. It's intended use is to make basic infrastructure information available to MCP-enabled AI agents and MCP-capable LLM clients. This server provides the following tools:
+This MCP server's intended use is to allow MCP-capable clients (e.g., Claude Desktop) to directly interact with UniFi Site Manager and UniFi Dream Machine and make the available telemetry available in a conversational context. It has not been tested outside of this scope (but it's probably *fine*). 
+
+This server provides the following tools:
 
 - mcpGetClientDetails
 - mcpGetClients
