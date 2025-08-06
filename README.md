@@ -8,7 +8,7 @@
 
 
 ## About This Project
-This is a tiny MCP server designed to allow MCP-capable clients (e.g., Claude Desktop) to directly interact with UniFi Site Manager and UniFi Dream Machine. It's intended use is to make basic infrastructure information available to AI agents or any tool capable LLM client. This server provides the following tools:
+This is a tiny MCP server designed to allow MCP-capable clients (e.g., Claude Desktop) to directly interact with UniFi Site Manager and UniFi Dream Machine. It's intended use is to make basic infrastructure information available to MCP-enabled AI agents and MCP-capable LLM clients. This server provides the following tools:
 
 - mcpGetClientDetails
 - mcpGetClients
