@@ -17,7 +17,7 @@ This is a tiny MCP server designed to allow MCP-capable clients (e.g., Claude De
 - mcpPing
 
 
-Schema for each tool are documented in their respective files and test coverage is available for observation/validation purposes.
+Schema and decriptions for each tool are documented in their respective files. Test coverage is available for observation/validation purposes.
 
 > [!TIP]
 > A Dockerfile is provided and has been tested in [Podman](http://podman.io). This is the recommended approach to running the server.
@@ -41,3 +41,7 @@ Instructions for obtaining API keys are in the **sample.env** file. It's beyond 
             ]
         }
     }
+
+
+## Statement on AI
+This project was pair-programmed with Claude Code. Claude wrote the unit tests, Dockerfile, and assisted with answering the odd question I had about the inner-workings of the MCP SDK.
