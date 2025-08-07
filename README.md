@@ -1,14 +1,16 @@
-# mcp-unifi
+# UniFi MCP Server
 
 > [!IMPORTANT]
-> This software is a personal project that I'm [releasing via the MIT License](https://github.com/sabler/mcp-unifi/blob/main/LICENSE). Furthermore, this project has no affiliation with Ubiquiti Networks. UniFi, Unifi Dream Machine, and UniFi Site Manager are registered trademarks of Ubiquiti Inc.
+> This software is a personal project that I'm [releasing via the MIT License](https://github.com/sabler/mcp-unifi/blob/main/LICENSE). Furthermore, this project has no affiliation with Ubiquiti, Inc. UniFi, UniFi Dream Machine, and UniFi Site Manager are registered trademarks of Ubiquiti Inc.
 
 > [!WARNING]
 > This MCP server should be considered early beta. I don't plan on introducing any breaking changes, but please keep in mind that it may nonetheless twitch a little between updates. Tools will be added as the UniFi SM and Network APIs mature, but more realistically as often as time permits on my side.
 
 
 ## About This Project
-This is a tiny MCP server designed to allow MCP-capable clients (e.g., Claude Desktop) to directly interact with UniFi Site Manager and UniFi Dream Machine. It's intended use is to make basic infrastructure information available to AI agents or any tool capable LLM client. This server provides the following tools:
+This MCP server's intended use is to allow MCP-capable clients (e.g., Claude Desktop) to directly interact with UniFi Site Manager and UniFi Dream Machine and make the available telemetry usable in a conversational context. It has not been tested outside of this scope (but it's probably *fine*). 
+
+This server provides the following tools:
 
 - mcpGetClientDetails
 - mcpGetClients
