@@ -1,7 +1,7 @@
 FROM node:22-alpine
 
 # Label for image tagging
-LABEL name="mcp-unifi-dev" version="latest"
+LABEL name="mcp-unifi" version="latest"
 
 # Set hostname
 RUN echo "mcp-unifi.local" > /etc/hostname
