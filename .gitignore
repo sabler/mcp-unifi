@@ -140,6 +140,6 @@ vite.config.ts.timestamp-*
 
 
 # Claude Code Memory File
-CLAUDE.md
+CLAUDE.*
 .claude/settings.local.json
 .vscode/bookmarks.json
