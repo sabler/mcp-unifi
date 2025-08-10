@@ -14,6 +14,11 @@ if (!BASE_URL || !UNIFI_SITE_ID || !UDM_API_KEY) {
     throw new Error('Missing required environment variables');
 }
 
+const httpsAgent = new Agent({
+        rejectUnauthorized: false,
+        keepAlive: true,
+        timeout: 10000
+    })
 
 export const unifiLocalClient = axios.create({
     baseURL: BASE_URL,
@@ -22,11 +27,7 @@ export const unifiLocalClient = axios.create({
         "X-API-Key": UDM_API_KEY,
         Accept: "application/json",
     },
-    httpsAgent: new Agent({
-        rejectUnauthorized: false,
-        keepAlive: true,
-        timeout: 10000
-    })
+    httpsAgent: httpsAgent
 });
 
 
@@ -37,10 +38,6 @@ export const unifiRemoteClient = axios.create({
         "X-API-Key": USM_API_KEY,
         Accept: "application/json",
     },
-    httpsAgent: new Agent({
-        rejectUnauthorized: false,
-        keepAlive: true,
-        timeout: 10000
-    })
+    httpsAgent: httpsAgent
 
 })
