@@ -8,7 +8,7 @@ import { pingToolSchema, pingToolHandler } from './tools/mcpPing.js'
 
 const server = new McpServer({
     name: 'UniFi MCP Server (Local)',
-    version: '1.0'
+    version: '0.1.2'
 });
 
 
