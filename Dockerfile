@@ -24,6 +24,7 @@ RUN pnpm build
 
 # Clean up dev dependencies after build
 RUN pnpm install --frozen-lockfile --prod
+RUN rm -rf src/ build.js tsconfig.json
 
 # Create non-root user for security
 RUN addgroup -g 1001 -S mcp && \

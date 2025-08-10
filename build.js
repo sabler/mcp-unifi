@@ -8,10 +8,10 @@ await build({
   format: 'esm',
   outfile: 'dist/index.js',
   external: [
-    '@modelcontextprotocol/sdk',
-    'axios',
+    //'@modelcontextprotocol/sdk',
+     'axios',
     'dotenv',
-    'zod',
+     'zod',
   ],
   sourcemap: false,
   minify: true,
