@@ -1,4 +1,4 @@
-import { TextContent } from "@modelcontextprotocol/sdk/types";
+import { type TextContent } from "@modelcontextprotocol/sdk/types";
 import { UNIFI_SITE_ID, unifiRemoteClient } from "../common/headers";
 import { z } from "zod";
 

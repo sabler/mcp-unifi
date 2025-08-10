@@ -13,8 +13,8 @@ await build({
     'dotenv',
     'zod',
   ],
-  sourcemap: true,
-  minify: false,
+  sourcemap: false,
+  minify: true,
   keepNames: true,
   banner: {
     js: '#!/usr/bin/env node'
