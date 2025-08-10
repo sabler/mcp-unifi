@@ -1,4 +1,4 @@
-import { type TextContent } from "@modelcontextprotocol/sdk/types";
+import { TextContent } from "@modelcontextprotocol/sdk/types";
 
 export const getDateAndTimeSchema = {
   title: "Get current date and time",

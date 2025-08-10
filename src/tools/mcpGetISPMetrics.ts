@@ -1,6 +1,8 @@
-import { type TextContent } from "@modelcontextprotocol/sdk/types";
-import { UNIFI_SITE_ID, unifiRemoteClient } from "../common/headers";
+import { TextContent } from "@modelcontextprotocol/sdk/types";
+import { ISPMetricsResponse } from "../types";
+import { unifiRemoteClient } from "../common/headers";
 import { z } from "zod";
+
 
 // 5m minute intervals only available for 24h period
 // 1h intervals only available for 7d or 30d period
@@ -41,7 +43,7 @@ export const getISPMetricsHandler = async ({
     throw new Error("Invalid combination: 5m intervals only available for 24h period, 1h intervals only available for 7d or 30d period");
   }
 
-  const response = await unifiRemoteClient.get(`https://api.ui.com/ea/isp-metrics/${timeFrame}?duration=${duration}`);
+  const response = await unifiRemoteClient.get<ISPMetricsResponse>(`https://api.ui.com/ea/isp-metrics/${timeFrame}?duration=${duration}`);
 
   return {
     content: [

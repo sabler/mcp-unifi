@@ -1,5 +1,6 @@
+import { TextContent } from "@modelcontextprotocol/sdk/types"
+import { AllClients } from "../types";
 import { unifiLocalClient, UNIFI_SITE_ID } from "../common/headers";
-import { type TextContent } from "@modelcontextprotocol/sdk/types";
 
 export const getClientsSchema = {
   title: "Get Connected Clients",
@@ -8,7 +9,7 @@ export const getClientsSchema = {
 
 export const getClientsHandler = async ():Promise<{content: TextContent[]}> => {
   try {
-    const response = await unifiLocalClient.get(`${UNIFI_SITE_ID}/clients`);
+    const response = await unifiLocalClient.get<AllClients>(`${UNIFI_SITE_ID}/clients`);
 
     return {
       content: [
